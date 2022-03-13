@@ -1,3 +1,9 @@
+@import "fonts";
+:root {
+  --font-hubballi: font-family: 'Hubballi', cursive;
+  --font-raleway: font-family: 'Raleway', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +15,49 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #333;
+  background-color: #ddd;
+  font-family: var(--font-raleway);
 }
 
+// Utilities
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// *** HEADER ***
+
+.showcase {
+  background: url(/media/showcase-cat.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+
+.main-nav {
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+
+       li {
+         padding: 0 1rem;
+       }
+    }
+
+    .cart {
+      padding: 0 1rem;
+    }
+  }
+}
