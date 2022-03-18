@@ -61,7 +61,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1647320065 .shape-fill {
-  fill: rgb(244, 247, 239);
+  fill: #f4f7ef;
 }
 
 // Nav
@@ -108,12 +108,14 @@ body {
 }
 
 .main-nav.sticky {
-  background: rgb(244, 247, 239);
+  background: #f4f7ef;
 }
 
 // *** MAIN ***
 
 main {
+  background-color: #f4f7ef;
+
   // Our Product
 
   .our-product {
