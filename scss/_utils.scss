@@ -1,0 +1,39 @@
+// Utilities
+
+a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-family: 'Raleway', cursive;
+}
+
+.header-container {
+  margin: 2rem auto 5rem;
+
+  h2 {
+    display: inline;
+    font-size: 2.2rem;
+    margin: 2rem 0 5rem;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: #52ff3b;
+    z-index: 3;
+  }
+}

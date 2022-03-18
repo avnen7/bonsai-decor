@@ -1,0 +1,21 @@
+// Media
+
+@media (max-width: 991px) {
+  footer {
+    padding: 4rem;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .copy {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

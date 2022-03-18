@@ -1,0 +1,108 @@
+// *** FOOTER ***
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 4rem 3rem;
+  background: #000;
+  color: #fff;
+}
+
+footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+}
+
+footer .container .sec h2 {
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+footer .container .sec h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #52ff3b;
+}
+
+footer .container .sec p {
+  color: #fff;
+}
+
+.socials {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+}
+
+.socials li a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.socials li a {
+  .fa-instagram {
+    color: #f77737;
+  }
+
+  .fa-twitter {
+    color: #1da1f2;
+  }
+
+  .fa-facebook {
+    color: #4267b2;
+  }
+}
+
+.quick-links li a {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.quick-links li a:hover {
+  color: #ffeb3b;
+  transition: 0.3s;
+}
+
+.info {
+  position: relative;
+}
+
+.info li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  margin-bottom: 1rem;
+}
+
+.info li span:nth-child(1) {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.info li span {
+  color: #fff;
+}
+
+.info li a:hover {
+  color: #ffeb3b;
+  transition: 0.3s;
+}
+
+.copy {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 4rem;
+  text-align: center;
+}
