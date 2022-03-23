@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Raleway:wght@100;200;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Quicksand&family=Raleway:wght@100;200;400&display=swap"
       rel="stylesheet"
     />
 
@@ -48,26 +48,33 @@
         <nav class="main-nav">
           <ul>
             <img
-            id="logo"
-            src="./media/Bonsai_200_200_px.png"
-            alt="logo image"
+              id="logo"
+              src="./media/Bonsai_200_200_px.png"
+              alt="logo image"
             />
-            <div class="nav-links">
-              <li class="nav-shop">
-                <h3>Shop <i class="fa-solid fa-chevron-down"></i></h3>
-              </li>
-              <li class="nav-about">
-                <h3>About <i class="fa-solid fa-chevron-down"></i></h3>
-              </li>
-            </div>
+            <ul class="nav-links">
+              <a href="#">
+                <li class="nav-shop current">Home</li>
+              </a>
+              <a href="#">
+                <li class="nav-shop">Shop</li>
+              </a>
+              <a href="#">
+                <li class="nav-about">About</li>
+              </a>
+            </ul>
           </ul>
         </nav>
-        <a class="arrow-down" href="#our-product"><i class="fa-solid fa-arrow-down-long"></i></a>
+        <a class="arrow-down" href="#our-product"
+          ><i class="fa-solid fa-arrow-down-long"></i
+        ></a>
       </div>
     </header>
 
     <!-- MAIN -->
     <main>
+
+      <!-- Our Product Section -->
       <section class="our-product" id="our-product">
         <div class="header-container">
           <h2>Bonsai Decor</h2>
@@ -91,6 +98,11 @@
           </div>
         </div>
       </section>
+      <section class="image-divider">
+        <div class="container"></div>
+      </section>
+
+      <!-- Related Products Section -->
       <section class="related-products">
         <div class="header-container">
           <h2>Related Products</h2>
