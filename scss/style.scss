@@ -26,7 +26,6 @@ body {
 
 .showcase {
   position: relative;
-  background: url(/media/showcase-cat.jpg) no-repeat center bottom/cover;
   width: 100%;
   height: 100vh;
 
@@ -40,6 +39,18 @@ body {
       color: #333;
     }
   }
+}
+
+.showcase::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  position: absolute;
+  background: url(/media/showcase-cat.jpg) no-repeat center bottom/cover;
 }
 
 // shape-divider
@@ -61,12 +72,14 @@ body {
 }
 
 .custom-shape-divider-bottom-1647320065 .shape-fill {
-  fill: #F2F7F0;
-  background-color: #F2F7F0;
+  fill: #f2f7f0;
+  background-color: #f2f7f0;
 }
 
 // Nav
 .main-nav {
+  font-family: $font-quicksand;
+  font-weight: bold;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,10 +87,14 @@ body {
   transition: 0.7s ease-in-out;
   z-index: 5;
 
+  a {
+    color: #000;
+  }
+
   ul {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     overflow: hidden;
@@ -91,9 +108,14 @@ body {
       justify-content: space-around;
       align-items: center;
       text-align: center;
+      gap: 4rem;
+
+      .current {
+        color: #eb6a05;
+      }
 
       li {
-        padding: 0 1rem;
+        font-size: 1.1rem;
       }
     }
 
@@ -109,15 +131,15 @@ body {
 }
 
 .main-nav.sticky {
-  background: #F2F7F0;
+  background: #f2f7f0;
 }
 
 // *** MAIN ***
 
 main {
-  background: #F2F7F0;
+  background: #f2f7f0;
 
-  // Our Product
+  // Our Product Section
 
   .our-product {
     display: flex;
@@ -140,7 +162,7 @@ main {
       img {
         width: 50%;
         height: 50%;
-        box-shadow: 2px 3px 10px 2px #000;
+        box-shadow: $box-shadow-card;
         object-fit: cover;
       }
     }
@@ -176,7 +198,23 @@ main {
     }
   }
 
-  // Related Products
+  // Image Divider Section
+
+  .image-divider {
+    margin: 10rem 0;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .image-divider .container {
+    width: 100%;
+    height: 100%;
+    background: url(/media/divider-1.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    box-shadow: $box-shadow-divider;
+  }
+
+  // Related Products Section
 
   .related-products {
     display: flex;
@@ -186,9 +224,10 @@ main {
 
     .container {
       display: grid;
+      margin: auto;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
-      width: 100%;
+      width: 80%;
       height: 50vh;
 
       .image-1 {
@@ -196,19 +235,17 @@ main {
       }
 
       .image-2 {
-        background: url('../media/related-2.jpg') no-repeat center
-          center/cover;
+        background: url('../media/related-2.jpg') no-repeat center center/cover;
       }
 
       .image-3 {
-        background: url('../media/related-3.jpg') no-repeat center
-          center/cover;
+        background: url('../media/related-3.jpg') no-repeat center center/cover;
       }
 
       .image-1,
       .image-2,
       .image-3 {
-        box-shadow: 1px 3px 8px #000;
+        box-shadow: $box-shadow-card;
         border-radius: 10px 10px 0 0;
       }
     }

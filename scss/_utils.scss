@@ -1,8 +1,23 @@
 // Utilities
 
+
+// *** Google Fonts ***
+
+$font-hubballi: 'Hubballi', cursive;
+$font-quicksand: 'Quicksand', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+
+// *** Colors ***
+
+$color-primary: #000;
+$color-secondary: #eb6a05;
+
+// *** Box Shadow ***
+$box-shadow-card: 1px 5px 10px #999;
+$box-shadow-divider: 1px 2px 20px 3px #bbb;
+
 a {
   text-decoration: none;
-  color: #f7f7f7;
 }
 
 li {
@@ -10,7 +25,7 @@ li {
 }
 
 h2 {
-  font-family: 'Raleway', cursive;
+  font-family: $font-raleway;
 }
 
 .header-container {
@@ -33,7 +48,7 @@ h2 {
     transform: translateX(-50%);
     width: 70px;
     height: 3px;
-    background: #EB6A05;
+    background: $color-secondary;
     z-index: 3;
   }
 }

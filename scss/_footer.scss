@@ -5,8 +5,12 @@ footer {
   width: 100%;
   height: auto;
   padding: 4rem 3rem;
-  background: #000;
+  background: $color-primary;
   color: #fff;
+
+  a {
+    color: #f4f4f4;
+  }
 }
 
 footer .container {
@@ -29,7 +33,7 @@ footer .container .sec h2::before {
   left: 0;
   width: 50px;
   height: 2px;
-  background: #EB6A05;
+  background: $color-secondary;
 }
 
 footer .container .sec p {
@@ -71,7 +75,7 @@ footer .container .sec p {
 }
 
 .quick-links li a:hover {
-  color: #ffeb3b;
+  color: $color-secondary;
   transition: 0.3s;
 }
 
@@ -95,13 +99,13 @@ footer .container .sec p {
 }
 
 .info li a:hover {
-  color: #ffeb3b;
+  color: $color-secondary;
   transition: 0.3s;
 }
 
 .copy {
   width: 100%;
-  background-color: #000;
+  background-color: $color-primary;
   color: #fff;
   padding: 0.5rem 4rem;
   text-align: center;
